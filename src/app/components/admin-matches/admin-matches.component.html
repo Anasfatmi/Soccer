@@ -1,0 +1,22 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col"> id</th>
+        <th scope="col">team one</th>
+        <th scope="col">team two</th>
+        <th scope="col">score one</th>
+        <th scope="col">score two</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody >
+      <tr *ngFor= 'let m of matches' >
+        <th>{{m.id}}</th>
+        <td >{{m.teamOne}}</td>
+        <td>{{m.teamTwo}}</td>
+        <td>{{m.scoreOne}}</td>
+        <td>{{m.scoreTwo}}</td>
+        <td>
+          <button class="btn btn-danger" (click)='Delete(m.id)'>Delete</button>
+        </td>
+      </tr>

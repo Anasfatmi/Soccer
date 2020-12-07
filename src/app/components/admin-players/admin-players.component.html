@@ -1,0 +1,20 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">name</th>
+      <th scope="col">dateOfBirth</th>
+      <th scope="col">poste</th>
+      <th scope="col">image</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor='let p of players'>
+      <th>{{p.id}}</th>
+      <td>{{p.name}}</td>
+      <td>{{p.dateOfBirth}}</td>
+      <td>{{p.poste}}</td>
+      <td><img [src]="p.image"></td>
+    </tr>
+  </tbody>
+</table>
